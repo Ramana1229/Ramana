@@ -43,3 +43,44 @@
     height: 220px;
   }
 }
+/* Professional Certificates Grid */
+#professional-certificates .info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  align-items: start;
+}
+
+#professional-certificates .info-card {
+  min-width: 0;
+  padding: 18px;
+}
+
+#professional-certificates .certificate-image-wrap {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#professional-certificates .certificate-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Tablets */
+@media (max-width: 900px) {
+  #professional-certificates .info-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 600px) {
+  #professional-certificates .info-grid {
+    grid-template-columns: 1fr;
+  }
+}
