@@ -5,3 +5,41 @@
 .section-light{background:var(--soft)}.narrow{max-width:850px}.section-title{font:800 clamp(2rem,4vw,2.8rem)/1.2 Manrope,sans-serif;letter-spacing:-1.2px;color:var(--navy);margin:0 0 32px}.section-text{font-size:1.08rem;color:#53647a;max-width:850px}.timeline{max-width:850px;margin-top:38px}.timeline-item{display:grid;grid-template-columns:22px 1fr;gap:18px;position:relative;padding-bottom:34px}.timeline-item:not(:last-child):before{content:"";position:absolute;left:8px;top:18px;bottom:-2px;width:2px;background:#d7e4f7}.timeline-dot{width:18px;height:18px;border-radius:50%;background:var(--blue);border:4px solid #dce9ff;z-index:1;margin-top:4px}.timeline-content h3,.info-card h3,.project-card h3,.skill-group h3{font:700 1.16rem Manrope,sans-serif;margin:0 0 5px;color:var(--navy)}.timeline-content p{margin:5px 0}.timeline-date{font-size:.78rem;letter-spacing:.8px;text-transform:uppercase;font-weight:700;color:var(--blue);margin:0 0 7px}.cards{display:grid;gap:20px}.two-col{grid-template-columns:repeat(2,minmax(0,1fr))}.info-card,.project-card,.skill-group{background:#fff;border:1px solid #e1e8f2;border-radius:var(--radius);padding:27px}.info-card p,.project-card p,.project-card li{color:#5a6a7f;font-size:.94rem}.card-icon{display:grid;place-items:center;width:42px;height:42px;background:#e8f0ff;color:var(--blue);font-size:1.4rem;border-radius:13px;margin-bottom:17px}.tag-list{margin-top:17px}.tag-list span{background:#f0f4fa;color:#52647c}.project-card{position:relative;overflow:hidden}.project-number{font:800 2.8rem Manrope,sans-serif;color:#e2ebfa;margin-bottom:5px}.project-card ul{padding-left:20px}.result-chip{background:#eaf7ef;color:#246b43!important;padding:10px 12px;border-radius:10px;font-size:.84rem!important}.skills-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.skill-group h3{margin-bottom:15px}.contact-section{background:var(--navy);color:#fff}.contact-section .section-title{color:#fff}.contact-section .eyebrow{color:#a8c7ff}.contact-section .section-text{color:#c7d5e9}.contact-grid{display:grid;grid-template-columns:1fr .8fr;gap:65px;align-items:center}.contact-card{background:#fff;color:var(--ink);border-radius:20px;padding:25px}.contact-card p{display:flex;flex-direction:column;gap:3px;margin:0 0 18px}.contact-card a{color:var(--blue);overflow-wrap:anywhere}.text-button{background:none;border:0;color:var(--blue);text-align:left;padding:0;font:600 .95rem "DM Sans",sans-serif;cursor:pointer}.small-note{font-size:.78rem;color:var(--muted);border-top:1px solid var(--line);padding-top:13px}footer{background:#0c1d33;color:#b9c8dc;padding:22px 0;font-size:.8rem}.footer-row{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}.footer-row a{color:#fff}
 @media(max-width:800px){.hero-grid,.contact-grid{grid-template-columns:1fr;gap:35px}.hero{padding-top:55px}.profile-card{max-width:470px;width:100%;margin:auto}.two-col{grid-template-columns:1fr}.skills-grid{grid-template-columns:1fr}.nav-links{display:none;position:absolute;top:73px;left:0;right:0;background:white;padding:18px 25px 24px;flex-direction:column;align-items:stretch;border-bottom:1px solid var(--line);gap:17px}.nav-links.open{display:flex}.menu-toggle{display:block}.section{padding:68px 0}.hero h1{letter-spacing:-2px}.footer-row{flex-direction:column}}
 @media print{.site-header,.hero-actions,footer,.photo-tip,.contact-section{display:none!important}.hero,.section,.section-light{padding:24px 0;background:#fff!important}.hero-grid,.contact-grid{display:block}.profile-card{box-shadow:none;border:1px solid #ddd;margin-top:20px}.cards,.two-col,.skills-grid{grid-template-columns:1fr 1fr}.section-title{font-size:24px}.hero h1{font-size:40px}.project-card,.info-card,.skill-group,.timeline-item{break-inside:avoid}.container{width:100%;max-width:none}.hero-tags{display:none}}
+/* Certificates & Workshops */
+.certificate-image-wrap {
+  width: 100%;
+  height: 260px;
+  padding: 10px;
+  background: #f1f5f9;
+  border-radius: 10px;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin-bottom: 18px;
+}
+
+.certificate-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+#certificates .info-card h3 {
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+#certificates .info-card p {
+  line-height: 1.7;
+}
+
+#certificates .info-card .button {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+@media (max-width: 700px) {
+  .certificate-image-wrap {
+    height: 220px;
+  }
+}
